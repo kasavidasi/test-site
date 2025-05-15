@@ -191,6 +191,10 @@ body, html {
 }
 
 .contact-map{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 20px;
+  justify-content: space-between;
   width: 100%;
   border-radius: 1px;
   padding: 1px;
@@ -199,6 +203,10 @@ body, html {
   color: #394939;
 }
 .contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 10px;
+  justify-content: space-between;
   border-radius: 1px;
   padding: 1px;
   box-sizing: border-box;
@@ -206,7 +214,7 @@ body, html {
   background-color: #cbe2cb;
   color: #394939;
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.3;
 }
 
 
