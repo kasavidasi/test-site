@@ -184,10 +184,10 @@ body, html {
 /* İletişim */
 .contact-container {
   display: grid;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 20px;
-  background-color:  #cbe2cb;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 20px;
+  justify-content: space-between;
+  background-color: #cbe2cb;
 }
 
 .contact-map,
