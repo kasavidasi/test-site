@@ -190,19 +190,25 @@ body, html {
   background-color: #cbe2cb;
 }
 
-.contact-map,
-.contact-info {
-  flex: 1;
-  min-width: 300px;
+.contact-map{
+  width: 100%;
+  border-radius: 1px;
+  padding: 1px;
+  box-sizing: border-box;
   background-color: #cbe2cb;
+  color: #394939;
 }
-
 .contact-info {
+  border-radius: 1px;
+  padding: 1px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #cbe2cb;
+  color: #394939;
   font-size: 1em;
   line-height: 1.6;
-  color: #394939;
-  
 }
+
 
 .contact-info a {
   color: #39803f;
