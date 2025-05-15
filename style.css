@@ -183,7 +183,7 @@ body, html {
 
 /* İletişim */
 .contact-container {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 20px;
@@ -378,6 +378,11 @@ html {
     align-items: center;
   }
 
+  .about-image,
+  .about-text {
+    width: 100%;
+  }
+
   .section {
     padding: 30px 10px;
   }
@@ -391,9 +396,3 @@ html {
     text-align: center;
   }
 }
-
-
-
-
-
-
