@@ -166,18 +166,27 @@ body, html {
 /* Galeri küçük resimler */
 
 
+/* Galeri bölümü */
+#gallery {
+  width: 100%;
+  padding: 45px 20px; /* Diğer bölümlerle aynı padding */
+}
+
 .gallery {
-  margin-top: 20px;
   display: grid;
-  justify-content: space-between;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
-  background-color:#cbe2cb;;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  background-color: #cbe2cb;
+  width: 100%;
+  max-width: 1200px; /* Diğer bölümlerle aynı max-width */
+  margin: 0 auto;
+  padding: 15px;
 }
 
 .gallery img {
-  width: 250px;
-  height: 200px;
+  width: 100%;
+  height: 150px;
   object-fit: cover;
   cursor: pointer;
   border-radius: 10px;
@@ -185,24 +194,23 @@ body, html {
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-
 .gallery img:hover {
-  transform: scale(1.09);
+  transform: scale(1.05);
 }
-@media (min-width: 600px) {
-  .gallery {
-    margin-top: 20px;
-  display: grid;
-  justify-content: space-between;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
-  background-color:#cbe2cb;;
-  }
 
+/* Mobil için ayarlar */
+@media (max-width: 768px) {
+  #gallery {
+    padding: 30px 15px; /* Mobilde biraz daha az padding */
+  }
+  
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* Mobilde 2 sütun */
+    gap: 10px;
+  }
+  
   .gallery img {
-    width: 200 px;
-    height: 200px;
-    border-radius: 8px;
+    height: 120px;
   }
 }
 
