@@ -191,7 +191,7 @@ body, html {
 /* Mobil için 2 sütun ayarı */
 @media (max-width: 600px) {
   .gallery img {
-    flex: 0 0 calc(50% - 15px); /* %50 genişlik eksi gap */
+    flex: 0 0 calc(50% - 5px); /* %50 genişlik eksi gap */
     width: auto; /* width yerine flex kullan */
     height: 150px; /* Dilersen mobilde biraz daha kısa yapabilirsin */
   }
