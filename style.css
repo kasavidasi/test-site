@@ -167,37 +167,38 @@ body, html {
 
 
 /* Galeri bölümü */
-
+#gallery.section {
+  padding: 45px 20px; /* Diğer section'larla aynı */
+}
 .gallery {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
-  background-color:#cbe2cb;;
+  width: 100%;
+  max-width: 1200px; /* Diğer bölümlerle uyumlu */
+  margin: 0 auto;
+  background-color: #cbe2cb;
+  padding: 15px; /* İç boşluk */
+  border-radius: 10px; /* Köşe yuvarlama */
 }
 
 .gallery img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: transform 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
-
-
 .gallery img:hover {
   transform: scale(1.09);
 }
 
-/* Mobil için ayarlar */
-@media (min-width: 600px) {
+/* Mobil görünüm */
+@media (max-width: 768px) {
   .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
 
 /* Galeri Lightbox büyük resim görünümü */
