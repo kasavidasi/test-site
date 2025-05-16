@@ -78,21 +78,20 @@ body, html {
 /* hakkımda */
 .about-container {
    display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 20px;
   justify-content: space-between;
   background-color: #cbe2cb;
   color: #394939;
-  
+  border-radius: 5px;
 }
 
 
 .about-image {
- display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  min-height: 300px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
   
 }
 
@@ -101,24 +100,17 @@ body, html {
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 50px;
   justify-content: space-between;
-   max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: 100%;
+  border-radius: 1px;
   padding: 1px;
   box-sizing: border-box;
-  display: block;
   background-color: #cbe2cb;
   color: #394939;
 }
 
 .about-text {
   
- width: 100%;
-  padding: 20px;
-  background-color: #cbe2cb;
-  color: #394939;
-  box-sizing: border-box;
-  border-radius: 8px;
+  padding: 10px 20px 0 20px;
   
 }
 
@@ -412,16 +404,9 @@ html {
     align-items: center;
   }
 
-  .about-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 300px;
-  }
-
-  .about-image img {
-    width: auto;
-    max-width: 100%;
+  .about-image,
+  .about-text {
+    width: 100%;
   }
 
   .section {
