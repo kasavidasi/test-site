@@ -112,7 +112,7 @@ body, html {
 /* Masaüstü için iki sütunlu yapı */
 @media (min-width: 768px) {
   .about-container {
-    grid-template-columns: 1fr 2fr; /* Görsel 1 birim, yazı 2 birim yer kaplasın */
+    grid-template-columns: 1fr 1fr; /* Görsel 1 birim, yazı 2 birim yer kaplasın */
     align-items: center;
   }
 
