@@ -192,8 +192,9 @@ body, html {
 @media (max-width: 600px) {
   .gallery img {
     flex: 0 0 calc(50% - 5px); /* %50 genişlik eksi gap */
-    width: auto; /* width yerine flex kullan */
+    max-width: 100%; /* width yerine flex kullan */
     height: 150px; /* Dilersen mobilde biraz daha kısa yapabilirsin */
+    display: block; 
   }
 }
 
