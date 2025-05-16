@@ -188,12 +188,6 @@ body, html {
   transform: scale(1.09);
 }
 
-/* Mobil için 2 sütun ayarı */
-@media (max-width: 600px) {
-  .gallery img {
-     width: calc((100% - 10px) / 3); /* 2 sütun */
-  }
-}
 
 /* Galeri Lightbox büyük resim görünümü */
 .lightbox {
