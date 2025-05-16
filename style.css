@@ -80,9 +80,6 @@ body, html {
    display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 20px;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
   justify-content: space-between;
   background-color: #cbe2cb;
   color: #394939;
@@ -113,7 +110,16 @@ body, html {
 
 .about-text {
   
-  padding: 10px 20px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 1px;
+  padding: 1px;
+  box-sizing: border-box;
+  background-color: #cbe2cb;
+  color: #394939;
   
 }
 
