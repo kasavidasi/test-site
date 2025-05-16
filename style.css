@@ -166,16 +166,18 @@ body, html {
 /* Galeri küçük resimler */
 .gallery {
   margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
+   padding: 15px;
+  width: 100%;
   background-color:#cbe2cb;;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Mobilde daha esnek bir yapı*/
 }
 
 .gallery img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 150px;
   object-fit: cover;
   cursor: pointer;
   border-radius: 10px;
@@ -192,6 +194,10 @@ body, html {
 @media (max-width: 600px) {
   .gallery img {
      width: calc((100% - 10px) / 3); /* 2 sütun */
+     gap : 8px;
+  }
+   #gallery.section {
+    padding: 45px 20px;
   }
 }
 
