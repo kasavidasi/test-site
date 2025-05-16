@@ -77,35 +77,22 @@ body, html {
 
 /* hakkımda */
 .about-container {
-   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
-  justify-content: space-between;
   background-color: #cbe2cb;
   color: #394939;
-  
+  padding: 20px;
 }
 
-
 .about-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  
+  text-align: center; /* Resmi ortalamak için */
 }
 
 .about-image img {
- 
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  gap: 50px;
-  justify-content: space-between;
-  width: 100%;
-  border-radius: 1px;
-  padding: 1px;
-  box-sizing: border-box;
-  background-color: #cbe2cb;
-  color: #394939;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .about-text {
@@ -121,6 +108,23 @@ body, html {
   background-color: #cbe2cb;
   color: #394939;
   
+}
+/* Masaüstü için iki sütunlu yapı */
+@media (min-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr 2fr; /* Görsel 1 birim, yazı 2 birim yer kaplasın */
+    align-items: center;
+  }
+
+  .about-image {
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
 }
 
 .about-text h3 {
