@@ -78,7 +78,7 @@ body, html {
 /* hakkımda */
 .about-container {
    display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 20px;
   width: 100%;
   padding: 20px;
@@ -99,7 +99,7 @@ body, html {
 
 .about-image img {
  
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 50px;
   justify-content: space-between;
   width: 100%;
