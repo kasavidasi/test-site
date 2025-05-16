@@ -77,50 +77,67 @@ body, html {
 
 /* hakkımda */
 .about-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
   background-color: #cbe2cb;
+  color: #394939;
+  border-radius: 5px;
 }
 
+
 .about-image {
-  width: 50%;
+  
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  
 }
 
 .about-image img {
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 50px;
+  justify-content: space-between;
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
+  border-radius: 1px;
+  padding: 1px;
+  box-sizing: border-box;
+  background-color: #cbe2cb;
+  color: #394939;
 }
 
 .about-text {
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-  color: #495f49;
   
+  padding: 10px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   
 }
 
 .about-text h3 {
-  font-size: 32px;
-  margin-bottom: 10px;
+   font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 5px;
   color: #394939;
-  
   
 }
 
 .about-text h4 {
-  font-size: 20px;
+   font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
   color: #394939;
-  margin-bottom: 20px;
 }
 
 .about-text p {
   font-size: 16px;
   line-height: 1.6;
+  margin: 0;
   
   
 }
@@ -140,12 +157,12 @@ body, html {
 
 /* Galeri küçük resimler */
 .gallery {
-   margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* mobil uyumlu */
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
-  justify-items: center;
-  background-color: #cbe2cb;
+  background-color:#cbe2cb;;
 }
 
 .gallery img {
