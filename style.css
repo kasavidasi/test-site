@@ -98,7 +98,7 @@ body, html {
 .about-text {
   
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   justify-content: space-between;
   width: 100%;
@@ -110,7 +110,7 @@ body, html {
   
 }
 /* Masaüstü için iki sütunlu yapı */
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .about-container {
     grid-template-columns: 1fr 1fr; /* Görsel 1 birim, yazı 2 birim yer kaplasın */
     align-items: center;
@@ -125,7 +125,7 @@ body, html {
     height: auto;
     border-radius: 8px;
   }
-}
+
 
 .about-text h3 {
    font-size: 32px;
@@ -193,9 +193,9 @@ body, html {
 }
 
 /* Mobil için ayarlar */
-@media (min-width: 600px) {
+@media (min-width: 400px) {
   .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 4fr));
     align-items: center;
   }
 
@@ -223,7 +223,7 @@ body, html {
 /* İletişim */
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   justify-content: space-between;
   background-color: #cbe2cb;
@@ -231,7 +231,7 @@ body, html {
 
 .contact-map{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   justify-content: space-between;
   width: 100%;
@@ -243,7 +243,7 @@ body, html {
 }
 .contact-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1px;
   justify-content: space-between;
   border-radius: 10px;
@@ -270,7 +270,7 @@ body, html {
 /* Görüş */
 .opinion-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   justify-content: space-between;
   background-color: #cbe2cb;
@@ -278,7 +278,7 @@ body, html {
 
 .extra-opinions {
   display: grid; /* burası önemli */
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
 }
 
