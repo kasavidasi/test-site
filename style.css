@@ -113,7 +113,7 @@ body, html {
 .about-text {
   
   padding: 10px 20px 0 20px;
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: flex-start;
   
