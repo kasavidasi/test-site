@@ -412,9 +412,16 @@ html {
     align-items: center;
   }
 
-  .about-image,
-  .about-text {
-    width: 100%;
+  .about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+  }
+
+  .about-image img {
+    width: auto;
+    max-width: 100%;
   }
 
   .section {
