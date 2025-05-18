@@ -2,10 +2,11 @@
 
 #hero {
   padding-top: 50px;
+  
 }
 
 .hero-slider {
-  height: 95vh;
+  height: 98vh;
   position: relative;
   background-color: #cbe2cb;
   overflow: hidden;
@@ -54,7 +55,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #d4e6d4;
 }
 
@@ -392,14 +393,15 @@ html {
   margin-top: 0px; /* sayfa içeriğinden biraz boşluk */
 }
 @media (max-width: 768px) {
+
   /* Hakkımda Container: iki sütundan tek sütuna indir */
   .about-container {
     grid-template-columns: 1fr !important;
-    padding: 10px !important;
+    padding: 15px !important;  
   }
 
   .about-image {
-    padding: 10px !important;
+    padding: 60px !important;
   }
 
   .about-text {
@@ -431,7 +433,7 @@ html {
 
   .opinion-box {
     font-size: 14px !important;
-    padding: 12px !important;
+    padding: 60px !important;
   }
 
   .show-more-btn {
@@ -455,8 +457,8 @@ html {
   /* Navbar mobil */
   .navbar {
     flex-direction: column !important;
-    padding: 15px 10px !important;
-    gap: 10px !important;
+    padding: 2px 2px !important;
+    gap: 2px !important;
   }
 
   nav {
@@ -465,7 +467,7 @@ html {
 
   .nav-links {
     flex-direction: column !important;
-    gap: 10px !important;
+    gap: 5px !important;
     align-items: center;
   }
 
@@ -478,13 +480,15 @@ html {
     width: 100% !important;
     height: auto !important;
     max-width: 350px;
+    padding: 60px;
   }
 
+ 
   /* Hero slider yüksekliği küçültülebilir */
    .hero-slider {
-    margin-top: 60px;
+    margin-top: 0px;
     width: 100%;
-    height: 600px; /* Mobilde yüksekliği küçült */
+    height: 650px; /* Mobilde yüksekliği küçült */
     background-size: contain; /* Resmi alanı tamamen kaplayacak şekilde ayarla */
     background-position: center;
     background-repeat: no-repeat;
