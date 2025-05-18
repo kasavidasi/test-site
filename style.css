@@ -401,7 +401,7 @@ html {
   }
 
   .about-image {
-    padding: 60px !important;
+    padding: 50px !important;
   }
 
   .about-text {
@@ -424,7 +424,7 @@ html {
   /* Görüş (Opinion) container: 3 sütundan 1 sütuna indir */
   .opinion-container {
     grid-template-columns: 1fr !important;
-    padding: 10px !important;
+    padding: 50px !important;
   }
 
   .extra-opinions {
@@ -433,7 +433,7 @@ html {
 
   .opinion-box {
     font-size: 14px !important;
-    padding: 60px !important;
+    padding: 10px !important;
   }
 
   .show-more-btn {
@@ -480,7 +480,7 @@ html {
     width: 100% !important;
     height: auto !important;
     max-width: 350px;
-    padding: 60px;
+    padding: 50px;
   }
 
  
